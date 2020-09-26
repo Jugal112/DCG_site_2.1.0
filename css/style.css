@@ -1672,6 +1672,10 @@ div.footer-copyright button.btn.btn-primary {
       margin-left: 0px;
   }
 
+  div.bg-img.dc-stat-bg {
+      max-width: 375px;
+  }
+
 
 
   .blog-author .media .media-left {
