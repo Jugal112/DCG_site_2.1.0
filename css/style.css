@@ -1672,8 +1672,9 @@ div.footer-copyright button.btn.btn-primary {
       margin-left: 0px;
   }
 
-  div.bg-img.dc-stat-bg {
-      max-width: 375px;
+  div.bg-img.stat-bg {
+      background-size: cover;
+      background-repeat: no-repeat;
   }
 
 
