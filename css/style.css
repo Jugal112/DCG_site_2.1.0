@@ -1673,8 +1673,7 @@ div.footer-copyright button.btn.btn-primary {
   }
 
   div.bg-img.stat-bg {
-      background-size: cover;
-      background-repeat: no-repeat;
+      max-width: 100vw;
   }
 
 
