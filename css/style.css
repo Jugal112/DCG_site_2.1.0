@@ -1674,6 +1674,7 @@ div.footer-copyright button.btn.btn-primary {
 
   div.bg-img.stat-bg {
       height: 100%;
+      background-attachment: scroll;
   }
 
 
