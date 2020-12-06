@@ -20,18 +20,21 @@ th, td {
 th {
     background: #F1F1F1;
     position: sticky;
+    position: -webkit-sticky;
     top: 0; /* Don't forget this, required for the stickiness */
     z-index: 1;
 }
 
 th:first-child {
     position: sticky;
+    position: -webkit-sticky;
     left: 0;
     z-index: 2;
 }
 
 td:first-child { 
     position: sticky;
+    position: -webkit-sticky;
     left: 0;
     z-index: 0;
     border-right: 1px solid #E1E1E1;
