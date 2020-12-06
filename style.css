@@ -1,30 +1,39 @@
-#table {
-    overflow: auto;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
 }
 
-table {  
-    color: #333;
-    font-family: Helvetica, Arial, sans-serif;
-    width: 640px; 
-    border-collapse: collapse;
-    border-spacing: 0; 
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse; 
 }
 
-td, th {  
-    border: 1px solid transparent; /* No more visible border */
-    height: 30px; 
+th, td {
+    padding: 0.25rem;
     transition: all 0.3s;  /* Simple transition for hover effect */
+    min-width: 100px;
 }
 
-th {  
-    background: #DFDFDF;  /* Darken header a bit */
-    font-weight: bold;
-    padding: 5px 10px;
+th {
+    background: #F1F1F1;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+    z-index: 1;
 }
 
-td {  
-    background: #FAFAFA;
-    text-align: center;
+th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+td:first-child { 
+    position: sticky;
+    left: 0;
+    z-index: 0;
+    border-right: 1px solid #E1E1E1;
 }
 
 /* Cells in even rows (2,4,6...) are one color */        
@@ -33,4 +42,4 @@ tr:nth-child(even) td { background: #F1F1F1; }
 /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
 tr:nth-child(odd) td { background: #FEFEFE; }  
 
-tr td:hover { background: #666; color: #FFF; }  
+tr td:hover { background: #666; color: #FFF; } 
