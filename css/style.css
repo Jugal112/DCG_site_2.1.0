@@ -1661,6 +1661,10 @@ div.footer-copyright button.btn.btn-primary {
       float: none;
       text-align: center;
   }
+
+  ul.main-nav.nav.navbar-nav.navbar-right {
+      flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 480px) {
