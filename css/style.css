@@ -1695,8 +1695,6 @@ div.footer-copyright button.btn.btn-primary {
       background-attachment: scroll;
   }
 
-
-
   .blog-author .media .media-left {
       display: block;
       padding-right: 0;
@@ -1716,6 +1714,10 @@ div.footer-copyright button.btn.btn-primary {
   .blog-comments .media .media {
       margin:0px -15px;
   }
+  
+  ul.main-nav.nav.navbar-nav.navbar-right {
+    flex-direction: column;
+}
 }
 
 
