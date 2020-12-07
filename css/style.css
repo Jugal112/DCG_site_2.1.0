@@ -345,6 +345,15 @@ div.home-content a.main-btn.btn-wd-1:hover {
     background: transparent;
 }
 
+ul.main-nav.nav.navbar-nav.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+nav#nav.navbar.navbar-dark, nav#nav.navbar.navbar-dark.fixed-nav {
+    background: #e7e7e7;
+}
+
 
 /* -- default nav -- */
 
@@ -1885,4 +1894,13 @@ div.footer-copyright button.btn.btn-primary {
     -webkit-transform:scale(0);
             transform:scale(0);
   }
+}
+
+/* -------INSIGHTS PAGE------- */
+
+.insights-container {
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding: 70px 0px 55px;
 }
