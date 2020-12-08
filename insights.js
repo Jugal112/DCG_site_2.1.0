@@ -93,7 +93,7 @@ d3.csv("/data.csv").then(function(data) {
         selectedValue = this.value;
         console.log(selectedValue);
         rows.filter(function(d) {
-            return d["Market Cap"] < selectedValue;
+            
         });
         console.log(rows);
         })
