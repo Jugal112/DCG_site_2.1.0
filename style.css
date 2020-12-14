@@ -4,45 +4,59 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
-#table-container {
-    display: block;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    margin: 0 auto;
-    overflow-x: auto;
+#settings {
+    width: 100vw;
+    background-color: white;
 }
 
-#table {
+#settings div {
+    height: 200px;
+    width: max-content;
+    float:left;
+}
+
+#shell {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;    
+}
+
+#container {
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: max-content;
+}
+
+table {
     text-align: left;
     position: relative;
     border-collapse: collapse; 
+
 }
 
 th, td {
-    padding: 0px 20px;
+    padding: 0.25rem;
     transition: all 0.3s;  /* Simple transition for hover effect */
-    font-size: 16px;
-    text-size-adjust: none;
+    min-width: 100px;
 }
 
 th {
     background: #F1F1F1;
     position: sticky;
-    position: -webkit-sticky;
     top: 0; /* Don't forget this, required for the stickiness */
-    z-index: 9999;
+    z-index: 1;
 }
 
 th:first-child {
     position: sticky;
-    position: -webkit-sticky;
     left: 0;
     z-index: 2;
 }
 
 td:first-child { 
     position: sticky;
-    position: -webkit-sticky;
     left: 0;
     z-index: 0;
     border-right: 1px solid #E1E1E1;
