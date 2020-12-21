@@ -45,7 +45,7 @@ var percentCols = new Set([
 var floatCols = new Set([
     "Magic Number"
 ])
-var numericCols = new Set([...currencyCols, ...multiplesCols, ...percentCols]);
+var numericCols = new Set([...currencyCols, ...multiplesCols, ...percentCols, ...floatCols]);
 var sliderCols = new Set([
     "EV/Revenue",
     "Avg QoQ Rev Growth",
