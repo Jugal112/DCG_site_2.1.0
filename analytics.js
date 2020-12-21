@@ -22,7 +22,8 @@ var colorCodedCols = new Set([
     'QoQ Rev Surprise',
 ]);
 var currencyCols = new Set([
-    "Revenue",
+    "LTM Revenue",
+    "NTM Revenue",
     "Market Cap",
     "Enterprise Value (EV)"
 ]);
@@ -38,9 +39,19 @@ var percentCols = new Set([
     "QoQ Rev Surprise",
     "LTM Gross Margin",
     "LTM EBITDA Margin",
-    "LTM FCF Margin"
+    "LTM FCF Margin",
+    "Implied YoY Rev Growth"
 ]);
+var floatCols = new Set([
+    "Magic Number"
+])
 var numericCols = new Set([...currencyCols, ...multiplesCols, ...percentCols]);
+var sliderCols = new Set([
+    "EV/Revenue",
+    "Avg QoQ Rev Growth",
+    "LTM Gross Margin",
+    "LTM FCF Margin"
+])
 
 function myFormatter(column, value) {
     if (currencyCols.has(column)) {
@@ -49,6 +60,8 @@ function myFormatter(column, value) {
         return d3.format(".2f")(value) + 'x';
     } else if (percentCols.has(column)) {
         return d3.format(".2%")(value);
+    } else if (floatCols.has(column)) {
+        return d3.format(".2f")(value);
     }
     return value;
     // return d3.format(".2s")(value);
@@ -57,7 +70,7 @@ function myFormatter(column, value) {
 var filters = {};
 
 d3.csv("/data.csv").then(function (data) {
-    numericCols.forEach(function (column) {
+    sliderCols.forEach(function (column) {
         createRangeSlider(data, column);
     });
 })
