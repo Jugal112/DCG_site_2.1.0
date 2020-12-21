@@ -1902,11 +1902,93 @@ div.footer-copyright button.btn.btn-primary {
   }
 }
 
-/* -------INSIGHTS PAGE------- */
+/* -------ANALYTICS PAGE------- */
 
-.insights-container {
-    display: block;
-    margin: auto;
-    width: 95%;
-    padding: 70px 0px 55px;
+a img.nav-logo {
+    max-width: 225px;
+    margin: 25px 40px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h2.anl-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 5px;
+}
+
+.anl-subtitle {
+    margin-bottom: 35px;
+}
+
+#settings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.anl-footer {
+    background-color: #1C1D21;
+}
+
+.foot-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 235px;
+    margin: 35px 0px 15px;
+}
+
+.foot-legal-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.foot-legal {
+    text-align: center;
+    font-size: 10px;
+    margin: 0px 45px;
+}
+
+.terms-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.terms-link {
+    margin: 15px 0px 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    a img.nav-logo {
+        max-width: 170px;
+    }
+
+    .footer-logo {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    a img.nav-logo {
+        max-width: 125px;
+    }
+
+    .footer-logo {
+        max-width: 145px;
+    }
 }
