@@ -1946,7 +1946,7 @@ h2.anl-title {
     align-items: center;
 }
 
-.footer-logo {
+.foot-logo {
     max-width: 235px;
     margin: 35px 0px 15px;
 }
@@ -1978,7 +1978,7 @@ h2.anl-title {
         max-width: 170px;
     }
 
-    .footer-logo {
+    .foot-logo {
         max-width: 180px;
     }
 }
@@ -1988,7 +1988,7 @@ h2.anl-title {
         max-width: 125px;
     }
 
-    .footer-logo {
+    .foot-logo {
         max-width: 145px;
     }
 }
