@@ -45,13 +45,18 @@ var percentCols = new Set([
 var floatCols = new Set([
     "Magic Number"
 ])
-var numericCols = new Set([...currencyCols, ...multiplesCols, ...percentCols, ...floatCols]);
+var numericCols = new Set([
+    ...currencyCols, 
+    ...multiplesCols, 
+    ...percentCols, 
+    ...floatCols
+]);
 var sliderCols = new Set([
     "EV/Revenue",
     "Avg QoQ Rev Growth",
     "LTM Gross Margin",
     "LTM FCF Margin"
-])
+]);
 
 function myFormatter(column, value) {
     if (currencyCols.has(column)) {
@@ -79,7 +84,7 @@ function render() {
     d3.csv("/data.csv").then(function (data) {
         // Select the div with the "table" id.
         d3.selectAll("table").remove();
-        var table_container = d3.select("#box").append("table")
+        var table_container = d3.select("#csv").append("table")
         var table = d3.select("table");
         // Append a header created from the data's columns.
         var header = table.append("thead").append("tr");
@@ -170,9 +175,6 @@ function createRangeSlider(data, column) {
         .default([minimum,maximum])
         .fill('#2196f3')
         .on('onchange', val => {
-            // d3.select('p#value-range')
-            //     .text(val.map(function (d) {return myFormatter(column, d)})
-            //     .join('-'));
             filters[column] = val;
             render();
         });
@@ -182,13 +184,7 @@ function createRangeSlider(data, column) {
         .attr('width', 500)
         .attr('height', 100)
         .append('g')
-        .attr('transform', 'translate(30,30)');
+        .attr('transform', 'translate(90,30)');
 
     gRange.call(sliderRange);
-    // d3.select('p#value-range').text(
-    // sliderRange
-    //     .value()
-    //     .map(d3.format('.2f'))
-    //     .join('-')
-    // );
 }

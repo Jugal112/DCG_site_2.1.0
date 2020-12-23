@@ -12,17 +12,26 @@ body {
 #settings div {
     height: 200px;
     width: max-content;
-    float:left;
+    float: left;
 }
 
-#shell {
+#settings div p {
+    margin: auto;
+    text-align: center;
+}
+
+#settings div svg g {
+    margin: auto;
+}
+
+#csv-container {
     display: block;
     height: 100vh;
     width: 100vw;
     overflow: auto;    
 }
 
-#container {
+#csv {
     display: block;
     position: relative;
     height: 100vh;
@@ -33,7 +42,6 @@ table {
     text-align: left;
     position: relative;
     border-collapse: collapse; 
-
 }
 
 th, td {
