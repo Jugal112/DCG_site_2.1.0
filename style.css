@@ -10,7 +10,7 @@ body {
 }
 
 #settings div {
-    height: 200px;
+    height: 125px;
     width: max-content;
     float: left;
 }
@@ -35,6 +35,12 @@ body {
     text-align: center;
     text-size-adjust: none;
     font-size: 18px;
+}
+
+#directions-container {
+    text-align: center;
+    text-size-adjust: none;
+    font-size: 14px;
 }
 
 #csv {
