@@ -103,8 +103,9 @@ a:hover, a:focus {
 }
 
 .about-txt {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.8em;
+  font-weight: 200;
 }
 
 ::-moz-selection {
@@ -821,19 +822,24 @@ header {
 \*------------------------------------*/
 
 .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 40px 20px 40px 70px;
+    padding: 40px 20px;
     margin: 15px 0px;
     border: 1px solid #EEE;
 }
 
 .service i {
-    position: absolute;
-    left: 20px;
+    /* position: absolute;
+    left: 28px; */
     text-align: center;
     font-size: 32px;
     color: #6195FF;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .service:after {
@@ -860,6 +866,10 @@ header {
 
 .service:hover h3 {
     color: #fff;
+}
+
+.theme-title {
+    text-align: center;
 }
 
 /*------------------------------------*\
@@ -1530,7 +1540,8 @@ div.col.col-md-6.bg-dark {
 \*------------------------------------*/
 
 .contact {
-    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -1538,6 +1549,11 @@ div.col.col-md-6.bg-dark {
     font-size: 36px;
     color: #6195FF;
     margin-bottom: 20px;
+}
+
+.contact a {
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 
 .contact-form {
@@ -1556,6 +1572,17 @@ div.col.col-md-6.bg-dark {
 
 .contact-form .input:nth-child(2) {
     margin-left: 15px;
+}
+
+h2.title.contact {
+    margin: 25px 0px 0px;
+    text-transform: uppercase;
+}
+
+.row.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*------------------------------------*\
