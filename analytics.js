@@ -40,7 +40,8 @@ var percentCols = new Set([
     "LTM Gross Margin",
     "LTM EBITDA Margin",
     "LTM FCF Margin",
-    "Implied YoY Rev Growth"
+    "Implied YoY Rev Growth",
+    "Contribution Margin*"
 ]);
 var floatCols = new Set([
     "Magic Number"
