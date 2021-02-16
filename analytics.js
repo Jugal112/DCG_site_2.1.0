@@ -76,7 +76,7 @@ function myFormatter(column, value) {
 var filters = {};
 
 // /data.csv
-d3.csv("https://drive.google.com/u/0/uc?id=1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr&export=download").then(function (data) {
+d3.csv("https://drive.google.com/file/d/1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr/view?usp=sharing").then(function (data) {
     sliderCols.forEach(function (column) {
         createRangeSlider(data, column);
     });
