@@ -75,15 +75,14 @@ function myFormatter(column, value) {
 
 var filters = {};
 
-// /data.csv
-d3.csv("https://drive.google.com/uc?export=download&id=1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr").then(function (data) {
+d3.csv("/data.csv").then(function (data) {
     sliderCols.forEach(function (column) {
         createRangeSlider(data, column);
     });
 })
 
 function render() {
-    d3.csv("https://drive.google.com/uc?export=download&id=1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr").then(function (data) {
+    d3.csv("/data.csv").then(function (data) {
         // Select the div with the "table" id.
         d3.selectAll("table").remove();
         var table_container = d3.select("#csv").append("table")
