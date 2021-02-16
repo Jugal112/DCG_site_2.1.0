@@ -83,7 +83,7 @@ d3.csv("https://drive.google.com/file/d/1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr/view?u
 })
 
 function render() {
-    d3.csv("/data.csv").then(function (data) {
+    d3.csv("https://drive.google.com/file/d/1-1ZVKKdvR4vm28yIwv3Wz1jh4SOdspjr/view?usp=sharing").then(function (data) {
         // Select the div with the "table" id.
         d3.selectAll("table").remove();
         var table_container = d3.select("#csv").append("table")
