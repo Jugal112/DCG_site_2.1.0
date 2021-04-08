@@ -45,7 +45,7 @@ Table OF Contents
 /* -- typography -- */
 
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 46px;
 }
 
 h2 {
@@ -90,7 +90,7 @@ a {
 a:hover, a:focus {
     text-decoration: none;
     outline: none;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     color: #6195FF;
 }
 
@@ -122,6 +122,14 @@ ul, ol {
     margin: 0;
     padding: 0;
     list-style: none
+}
+
+#main-line {
+    text-transform: none;
+}
+
+p.main-desc.white-text {
+    font-size: 20px;
 }
 
 /* -- section  -- */
@@ -237,8 +245,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     margin: 3px;
     border: 2px solid transparent;
     border-radius: 3px;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
+    transition: transform 0.1s;
 }
 
 .main-btn {
@@ -258,7 +265,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .main-btn:hover, .white-btn:hover, .outline-btn:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .btn-wd-1 {
@@ -654,6 +661,7 @@ header {
 
 #particles-js {
   height: 100vh;
+  background-color: #ffffff;
 }
 
 
@@ -1576,7 +1584,7 @@ div.col.col-md-6.bg-dark {
 
 h2.title.contact {
     margin: 25px 0px 0px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .row.contact {
