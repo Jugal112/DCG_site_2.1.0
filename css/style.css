@@ -1661,12 +1661,11 @@ h2.title.contact {
 .footer-copyright p {
     text-align: center;
     font-size: 14px;
-    text-transform: uppercase;
     margin: 0;
 }
 
 .footer-copyright p.main-disclosures {
-  font-size: 8px;
+  font-size: 9px;
   padding-top: 12px;
 }
 
@@ -2011,7 +2010,6 @@ h2.anl-title {
     text-align: center;
     font-size: 8px;
     margin: 0px 45px;
-    text-transform: lowercase;
 }
 
 .terms-cont {
