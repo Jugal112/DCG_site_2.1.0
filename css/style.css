@@ -248,8 +248,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     transition: transform 0.1s;
 }
 
-.main-btn {
-    background: #6195FF;
+.main-btn, .btn-primary {
+    background: #1C396F;
     color: #FFF;
 }
 
@@ -310,6 +310,10 @@ div.home-content a.main-btn.btn-wd-1:hover {
 
 #nav.fixed-nav .navbar-brand .logo-alt {
     display: none;
+}
+
+.logo-home {
+    max-width: 175px;
 }
 
 @media only screen and (max-width: 767px) {
